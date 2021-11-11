@@ -8,6 +8,10 @@ const app = new Vue({
   
   },
 
+  mounted(){
+    setInterval(this.nextSlide, 3000);
+  },
+
   methods:{
     nextSlide(){
       this.counter++;
